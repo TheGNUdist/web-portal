@@ -183,8 +183,8 @@ a.menu-item:hover, .menu-item.current {
 		background-color: #0b0b3b;
 	}
 	#wrapper {
-		width: 90%;
-		max-width: 900px;
+		/*width: 90%;*/
+		/*max-width: 900px;*/
 		margin: 0 auto;
 		background-color: white;
 	}
