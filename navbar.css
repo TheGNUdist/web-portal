@@ -55,17 +55,11 @@ ul {
 	justify-content: flex-start;
 	-webkit-align-items: center;
 	align-items: center;
+	margin: 0 auto;
+	background-color: white;
 }
 #page {
 	overflow: auto;
-	/*display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: column nowrap;
-	flex-flow: column nowrap;
-	-webkit-justify-content: flex-start;
-	justify-content: flex-start;
-	-webkit-align-items: center;
-	align-items: center;*/
 	margin: 0px auto;
 	width: 100%;
 	font: 15px/25px Arial, sans-serif;
@@ -80,7 +74,7 @@ h1 {
 h2 {
 	font: 24px/31px Arial, sans-serif;
 	padding-bottom: 10px;
-}	
+}
 h3 {
 	font: 18px/25px Arial, sans-serif;
 	font-weight: bold;
@@ -99,6 +93,7 @@ h3 {
 	margin: 5px 10px;
 	text-align: center;
 	min-width: 110px;
+	box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24)
 }
 a.button:link {
 	text-decoration: none;
@@ -108,9 +103,18 @@ a.button:visited {
 }
 a.button:hover {
 	color: black;
+	box-shadow: 0 0 2px rgba(0,0,0,.12),1px 3px 4px rgba(0,0,0,.24)
 }
 
 /********** Navbar **********/
+#menu-bar {
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+	background-color: #004891;
+	width: 100%;
+	z-index: 99;
+	box-shadow: 1px 0px 10px #004891;
+}
 #menu {
 	display: -webkit-flex;
 	display: flex;
@@ -120,12 +124,12 @@ a.button:hover {
 	justify-content: space-around;
 	-webkit-align-items: center;
 	align-items: center;
-	background-color: #004891;
 	font: 21px/28px Arial, sans-serif;
 	color: white;
 	cursor: pointer;
-	width: 100%;
-	z-index: 99;
+	max-width: 990px;
+	margin-left: auto;
+	margin-right: auto;
 }
 #branding {
 	-webkit-flex: 0 1 auto;
@@ -174,19 +178,11 @@ a.menu-item:hover, .menu-item.current {
 		min-height: 100%;
 		height: 100%;
 	}
+	::-webkit-scrollbar {
+    	width: 0px;
+	}
 	#wrapper {
 		overflow-x: hidden;
-	}
-}
-@media screen and (min-width: 650px) {
-	body {
-		background-color: #0b0b3b;
-	}
-	#wrapper {
-		/*width: 90%;*/
-		/*max-width: 900px;*/
-		margin: 0 auto;
-		background-color: white;
 	}
 }
 @media screen and (max-width: 650px) {
@@ -196,7 +192,7 @@ a.menu-item:hover, .menu-item.current {
 	}
 	h2 {
 		font: 27px/34px Arial, sans-serif;
-	}	
+	}
 	#logo > img {
 		max-height: 35px;
 		margin-top: 5px;

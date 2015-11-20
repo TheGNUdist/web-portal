@@ -13,8 +13,8 @@
 	-webkit-align-items: center;
 	align-items: center;
 	min-height: 150px;
-	width: 90%;
-  max-width: 900px;
+	width: 92%;
+	max-width: 850px;
 }
 .topic.future {
 	display: none;
@@ -54,7 +54,7 @@
 	.content {
 		-webkit-flex: 1 1 50%;
 		flex: 1 1 50%;
-	}	
+	}
 	.nav {
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;

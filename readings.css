@@ -6,6 +6,7 @@
 	background-color: ghostwhite;
 	padding: 20px;
 	width: 92%;
+	max-width: 850px;
 }
 #readings .row {
 	display: -webkit-flex;
