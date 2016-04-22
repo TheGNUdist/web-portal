@@ -3,7 +3,6 @@
 	flex: 0 0 auto;
 	margin: 30px auto;
 	box-shadow: 0 0 7px rgba(0,0,0,0.1);
-	background-color: ghostwhite;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row nowrap;
@@ -16,10 +15,12 @@
 	width: 92%;
 	max-width: 850px;
 }
-.topic.future {
+.hidden {
 	display: none;
 }
 .header {
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
 	margin-left: 20px;
 }
 .date {
